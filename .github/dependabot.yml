@@ -8,5 +8,7 @@ registries:
 updates:
 - package-ecosystem: pip
   directory: "/" # Update all dependencies
+  registries:
+    - bytesafe
   schedule:
     interval: "daily"
