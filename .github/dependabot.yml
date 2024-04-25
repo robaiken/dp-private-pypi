@@ -10,5 +10,6 @@ updates:
   directory: "/" # Update all dependencies
   registries:
     - bytesafe
+  replaces-base: true
   schedule:
     interval: "daily"
