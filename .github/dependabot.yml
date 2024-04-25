@@ -1,0 +1,12 @@
+version: 2
+registries:
+  bytesafe:
+    type: "pip"
+    url: https://dependabot.bytesafe.dev/python/dependabot/"
+    username: "bytesafe"
+    password: ${{secrets.BYTESAFE_PASSWORD}}
+updates:
+- package-ecosystem: pip
+  directory: "/" # Update all dependencies
+  schedule:
+    interval: "daily"
