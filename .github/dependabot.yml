@@ -5,11 +5,11 @@ registries:
     url: "https://dependabot.bytesafe.dev/python/dependabot/"
     username: "bytesafe"
     password: ${{secrets.BYTESAFE_PASSWORD}}
+    replaces-base: true
 updates:
 - package-ecosystem: pip
   directory: "/" # Update all dependencies
   registries:
     - bytesafe
-  replaces-base: true
   schedule:
     interval: "daily"
