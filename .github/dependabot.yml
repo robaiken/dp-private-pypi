@@ -1,7 +1,7 @@
 version: 2
 registries:
   bytesafe:
-    type: "pip"
+    type: "python-index"
     url: https://dependabot.bytesafe.dev/python/dependabot/"
     username: "bytesafe"
     password: ${{secrets.BYTESAFE_PASSWORD}}
